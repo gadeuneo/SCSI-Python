@@ -2,9 +2,10 @@
 
 import cv2
 
-lst1 = ["TestImages/SnowLeo1.jpg", "TestImages/SnowLeo2.jpg", "TestImages/Puzzle1.jpg", "TestImages/Coins1.jpg", "TestImages/Coins2.jpg", "TestImages/DollarCoin.jpg", "TestImages/frankenstein.jpg", "TestImages/gorge.jpg", "TestImages/ghostrider.jpg", "TestImages/Puzzle2.jpg"]
+lst1 = ["SnowLeo1.jpg", "SnowLeo2.jpg", "Puzzle1.jpg", "Coins1.jpg", "Coins2.jpg", "DollarCoin.jpg", "frankenstein.jpg", "gorge.jpg", "ghostrider.jpg", "Puzzle2.jpg"]
 
 for var in lst1:
-    cv2.imread("var")
+    x = cv2.imread("TestImages/"+var)
+    cv2.imshow("img", x)
     cv2.waitKey(0)
 cv2.destroyAllWindows()
