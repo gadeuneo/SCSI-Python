@@ -1,8 +1,5 @@
 # James Gardner
 
-
-
-
 total = 0
 numbers = [35, -2, 27, 70, 12]
 i = 0
