@@ -32,8 +32,6 @@ elif char == 's':
     transImag = cv2.warpAffine(img,transMatrix, (cols,rows))
     cv2.imshow("Translated", transImag)
 
-
-
 transMatrix = numpy.float32([[1, 0, 30], [0, 1, 50]])
 transImag = cv2.warpAffine(img, transMatrix, (cols, rows))
 cv2.imshow("Translated", transImag)
