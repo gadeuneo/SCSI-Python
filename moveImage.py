@@ -30,7 +30,7 @@ while (True):
         transMatrix = numpy.float32([[1,0,0], [0,1,10]])
         transImag = cv2.warpAffine(img,transMatrix, (cols,rows))
         cv2.imshow("Translated", transImag)
-    elif char == 'q':
+    elif char == 'x':
         break
     img = transImag
 cv2.destroyAllWindows()
