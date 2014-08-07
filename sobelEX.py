@@ -7,7 +7,7 @@ img = cv2.imread("TestImages/shops.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #Compute gradient in horizontal direction (detects vertical edges)
-sobleValsHorz = cv2.Sobel(gray, cv2.CV_32F, 1, 0)
+sobelValsHorz = cv2.Sobel(gray, cv2.CV_32F, 1, 0)
 horzImg = cv2.convertScaleAbs(sobelValsHorz)
 cv2.imshow("horizontal gradient", horzImg)
 
