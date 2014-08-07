@@ -15,19 +15,19 @@ while (True):
     char = chr(code & 0xFF)
     
     if char == 'a':
-        transMatrix = numpy.float32([[1,0,-30], [0,1,0]])
+        transMatrix = numpy.float32([[1,0,-10], [0,1,0]])
         transImag = cv2.warpAffine(img, transMatrix, (cols, rows))
         cv2.imshow("Translated", transImag)
     elif char == 'w':
-        transMatrix = numpy.float32([[1,0,0], [0,1,-30]])
+        transMatrix = numpy.float32([[1,0,0], [0,1,-10]])
         transImag = cv2.warpAffine(img,transMatrix, (cols,rows))
         cv2.imshow("Translated", transImag)
     elif char == 'd':
-        transMatrix = numpy.float32([[1,0,30], [0,1,0]])
+        transMatrix = numpy.float32([[1,0,10], [0,1,0]])
         transImag = cv2.warpAffine(img, transMatrix, (cols,rows))
         cv2.imshow("Translated", transImag)
     elif char == 's':
-        transMatrix = numpy.float32([[1,0,0], [0,1,30]])
+        transMatrix = numpy.float32([[1,0,0], [0,1,10]])
         transImag = cv2.warpAffine(img,transMatrix, (cols,rows))
         cv2.imshow("Translated", transImag)
     elif char == 'q':
