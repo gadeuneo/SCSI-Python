@@ -19,4 +19,5 @@ if ret == True:
             break
 
 cap.release()
+cv2.waitKey(0)
 cv2.destroyAllWindows()
