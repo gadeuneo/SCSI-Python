@@ -18,7 +18,10 @@ cv2.imshow("vertical gradient", vertImg)
 
 #Combine the two gradients
 sobelComb = cv2.addWeighted(sobelValsHorz, 0.5,
-                            sobelValsHerts, 0.5, 0)
+                            sobelValsVerts, 0.5, 0)
 #Convert back to uint8
 sobelImg = cv2.convertScaleAbs(sobelComb)
 cv2.imshow("Sobel", sobelImg)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
