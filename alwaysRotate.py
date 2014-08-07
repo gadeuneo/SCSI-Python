@@ -23,6 +23,24 @@ while (True):
         rotImg = cv2.warpAffine(img, rotMat, (cols,rows))
         cv2.imshow("Rotated", rotImg)
         cv2.waitKey(1)
+    elif char == 'e':
+        speed += 10
+        rotMat = cv2.getRotationMatrix2D( (cols / 2, rows / 3), speed, 1)
+        rotImg = cv2.warpAffine(img, rotMat, (cols,rows))
+        cv2.imshow("Rotated", rotImg)
+        cv2.waitKey(1)
+    elif char == 't':
+        speed += 2
+        rotMat = cv2.getRotationMatrix2D( (cols / 2, rows / 3), speed, 1)
+        rotImg = cv2.warpAffine(img, rotMat, (cols,rows))
+        cv2.imshow("Rotated", rotImg)
+        cv2.waitKey(1)
+    elif char == 'w':
+        speed += 50
+        rotMat = cv2.getRotationMatrix2D( (cols / 2, rows / 3), speed, 1)
+        rotImg = cv2.warpAffine(img, rotMat, (cols,rows))
+        cv2.imshow("Rotated", rotImg)
+        cv2.waitKey(1)
     elif char == 'q':
         break
 cv2.destroyAllWindows()
